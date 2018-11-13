@@ -4,9 +4,9 @@
   "description": "采用 Rollup 构建的前端项目 Demo",
   "main": "index.js",
   "scripts": {
-    "build": "rollup -c",
+    "build": "NODE_ENV=production rollup -c",
     "watch": "rollup -c -w",
-    "dev": "npm-run-all --parallel watch",
+    "dev": "NODE_ENV=development npm-run-all --parallel watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

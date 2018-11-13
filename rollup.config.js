@@ -56,7 +56,7 @@ export default {
       host: 'localhost',
       port: 10001,
     }),
-    livereload()
+    (process.env.NODE_ENV === 'development' && livereload())
   ],
   output: {
     file: 'dist/demo.min.js',
